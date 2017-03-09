@@ -1,0 +1,53 @@
+.animated {
+  -webkit-animation-duration: 200s;
+  animation-duration: 200s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes bounceOutDown {
+  from{
+    opacity: 0.8;
+  }
+
+  to {
+    opacity: 2;
+  }
+}
+
+.bounceOutDown {
+  -webkit-animation-name: bounceOutDown;
+  animation-name: bounceOutDown;
+}
+
+.toast {
+  position: fixed;
+  left: 50%;
+  top: 49%;
+  z-index: 10000;
+  max-width: 640px;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  font-size: 30px;
+  background-color: rgba(0,0,0, .8);
+  border-radius: 10px;
+  transform: translate(-50%, 0);
+  animation-delay: .1s;
+  -webkit-animation-delay: .1s;
+  white-space: nowrap;
+  background-repeat: no-repeat;
+  background-position: center 30px;
+  background-size: 58px 58px;
+  min-width: 160px;
+
+  &.error {
+    //padding-top: 106px;
+    background-color: rgba(0,0,0, .8);
+    //background-image: url(../../asset/img/icon_alert.png);
+  }
+
+  &.hidden {
+    display: none;
+  }
+}

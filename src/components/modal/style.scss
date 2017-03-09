@@ -1,0 +1,53 @@
+.mask-wrap {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: table;
+  background: rgba(0, 0, 0, 0.75);
+
+  .modal-wrap {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .modal {
+    background: #FFFFFF;
+    border-radius: 4px;
+    width: 640px;
+    min-height: 400px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 9999;
+  }
+
+  .btn-close {
+    height: 50px;
+    width: 50px;
+    background: url(./img/close.png) no-repeat;
+    background-size: contain;
+    margin: 55px auto 0;
+  }
+
+  .modal-hd {
+    height: 94px;
+    line-height: 94px;
+    background: #E3F0FF;
+    border-radius: 4px;
+    font-size: 32px;
+    color: #2E8DE8;
+    text-align: center;
+  }
+
+  .modal-body {
+    position: absolute;
+    top: 94px;
+    bottom: 0;
+    width: 100%;
+    overflow-y: auto;
+    background: #fff;
+    -webkit-overflow-scrolling: touch;
+  }
+}

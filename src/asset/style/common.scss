@@ -1,0 +1,88 @@
+$green: #4CD964;
+
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #F2F2F2;
+  color: #333;
+  font: 28px/1.5 Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,\\5FAE\8F6F\96C5\9ED1,Arial,sans-serif;
+  user-select: none;
+}
+
+body {
+  position: relative;
+  min-height: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a, img {
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  -webkit-appearance: button;  /* iOS下的样式问题 */
+}
+
+input {
+  -webkit-appearance: none;
+  font-size: 28px;
+}
+
+input::-webkit-input-placeholder { /* WebKit browsers*/
+  color: #ccc;
+  font-size: 28px;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+#__runtime__{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 28px;
+  opacity: 0.85;
+  background: #EFEFF4;
+}
+
+.confirm-ft {
+  height: 88px;
+  line-height: 88px;
+  border-top: 1px solid #DADADA;
+  font-size: 28px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+
+  & > a,
+  & > div {
+    width: 50%;
+    color: #2E8DE8;
+    border-left: 1px solid #dadada;
+  }
+}
+
+[data-dpr="1"] .confirm-ft {
+  border-top-width: 1px; /* no */
+
+  & > a,
+  & > div {
+    border-left-width: 1px; /* no */
+  }
+}
